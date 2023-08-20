@@ -1,4 +1,3 @@
-'use client'
 import useOrientation from "@/hooks/useOrientation";
 import { memo } from "react";
 import useWindowSize from "@/hooks/useWindowSize";

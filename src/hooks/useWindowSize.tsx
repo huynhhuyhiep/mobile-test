@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 
 const useWindowSize = (options?: { isWatch: boolean }) => {
   const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight
+    width: 0,
+    height: 0
   });
 
   const orientation = useOrientation();

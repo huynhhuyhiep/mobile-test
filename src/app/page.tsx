@@ -1,5 +1,6 @@
+"use client"
 import React from 'react';
-import { Card, Col, ConfigProvider, Row, Typography } from 'antd';
+import { Card, Col, ConfigProvider, Row } from 'antd';
 import theme from '@/config/AntdTheme';
 import { Orientation } from "@/components/Orientation";
 
