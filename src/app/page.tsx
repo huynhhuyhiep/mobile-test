@@ -3,6 +3,7 @@ import React from 'react';
 import { Card, Col, ConfigProvider, Row } from 'antd';
 import theme from '@/config/AntdTheme';
 import { Orientation } from "@/components/Orientation";
+import { DateTimePicker } from "@/components/DateTimePicker";
 
 const HomePage = () => (
   <ConfigProvider theme={theme}>
@@ -13,6 +14,11 @@ const HomePage = () => (
           <Col xs={24} sm={12} md={8} lg={6}>
             <Card>
               <Orientation/>
+            </Card>
+          </Col>
+          <Col xs={24} sm={12} md={8} lg={6}>
+            <Card>
+              <DateTimePicker/>
             </Card>
           </Col>
           <Col xs={24} sm={12} md={8} lg={6}>
