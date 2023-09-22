@@ -12,7 +12,7 @@ export const DateTimePicker = memo((props: DateTimePickerProps) => {
   const ref = useRef<any>();
 
   useEffect(() => {
-    document.querySelectorAll("button").forEach((button) => {
+    document.querySelectorAll("button.date-btn").forEach((button) => {
       button.addEventListener("click", (event) => {
         // @ts-ignore
         const input = event.srcElement?.previousElementSibling;
@@ -41,7 +41,7 @@ export const DateTimePicker = memo((props: DateTimePickerProps) => {
       Date picker
       <div className='flex gap-1 my-1 flex-wrap'>
         <input type="date" />
-        <button>Show picker</button>
+        <button className='date-btn'>Show picker</button>
       </div>
 
       <hr/>
@@ -49,7 +49,7 @@ export const DateTimePicker = memo((props: DateTimePickerProps) => {
       Time picker
       <div className='flex gap-1 my-1 flex-wrap'>
         <input type="time"/>
-        <button>Show picker</button>
+        <button className='date-btn'>Show picker</button>
       </div>
 
       {error && <>
